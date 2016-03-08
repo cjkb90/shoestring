@@ -1,7 +1,61 @@
 @import "normalize";
 @import "modern-business";
+/*@import "grid";
+@import "form";*/
 body {
   h1 {
     color: white;
   }
+}
+*{
+	box-sizing: border-box;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+.row {
+  clear: both;
+}
+
+
+@for $i from 1 through 12 {
+	.col-lg-#{$i} {
+		width: ($i / 12) * 100%;
+		float:left;
+		padding:10px;
+	}
+}
+
+.section {
+	.lead{
+
+	}
+}
+
+.section-colored{
+	clear:both;
+	overflow:hidden;
+}
+
+.navbar {
+    color: gray;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar-inverse{
+	background-color:black;
+	filter: invert(100%);
+}
+
+.navbar-fixed-top{
+	position:fixed;
+	top: 0;
+}
+
+.navbar-right {
+    float: right;
 }
